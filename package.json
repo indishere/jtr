@@ -1,0 +1,18 @@
+{
+  "name": "java-to-rust-converter",
+  "version": "0.1.0",
+  "description": "Project-wide Java/Kotlin to Rust conversion CLI",
+  "type": "module",
+  "bin": {
+    "jtr": "./src/cli.js"
+  },
+  "scripts": {
+    "test": "node --test",
+    "lint": "node --check src/cli.js && node --check src/project.js && node --check src/converter/common.js && node --check src/converter/java.js && node --check src/converter/kotlin.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": ["java", "kotlin", "rust", "transpiler", "converter", "cli"],
+  "license": "MIT"
+}
